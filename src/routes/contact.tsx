@@ -20,9 +20,10 @@ function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
             {[
+              { icon: User, t: "Managing Director", d: "Mrs Doubra Tufa" },
               { icon: MapPin, t: "Head Office", d: "Marine House, Victoria Island, Lagos, Nigeria" },
-              { icon: Phone, t: "Phone", d: "+234 (0) 000 000 0000" },
-              { icon: Mail, t: "Email", d: "info@foxmarine.ng" },
+              { icon: Phone, t: "Phone", d: "0803 283 3693 / 0810 754 3659" },
+              { icon: Mail, t: "Email", d: "Dtmtufa@gmail.com / ebiladetufa1@gmail.com" },
             ].map((c) => (
               <div key={c.t} className="flex gap-5">
                 <div className="h-12 w-12 rounded-md bg-primary text-white flex items-center justify-center flex-shrink-0">
