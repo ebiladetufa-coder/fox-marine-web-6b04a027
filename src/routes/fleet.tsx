@@ -1,45 +1,57 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHero } from "@/components/SiteLayout";
-import heroImg from "@/assets/hero-vessel.jpg";
-import portImg from "@/assets/services-port.jpg";
-import offshoreImg from "@/assets/offshore.jpg";
+import { Wrench, Cog, Ship, Anchor, Droplet, GitBranch } from "lucide-react";
 
 export const Route = createFileRoute("/fleet")({
   head: () => ({
     meta: [
-      { title: "Fleet — Fox Marine Nigeria Limited" },
-      { name: "description", content: "Explore Fox Marine's modern fleet of supply vessels, tugs, and offshore support craft." },
+      { title: "Equipment & Fleet — Fox Marine Nigeria Limited" },
+      { name: "description", content: "Modern dredging equipment and a versatile marine fleet — cutter suction dredgers, excavator-mounted dredgers, barges, tugboats and more." },
     ],
   }),
   component: FleetPage,
 });
 
-const fleet = [
-  { img: heroImg, name: "Platform Supply Vessels", spec: "60–80m | DP2 | Multi-purpose" },
-  { img: offshoreImg, name: "Anchor Handling Tugs", spec: "BHP 5,000+ | FiFi-1 | Towage" },
-  { img: portImg, name: "Crew & Cargo Boats", spec: "High-speed | 30–60 PAX | Coastal" },
+const equipment = [
+  { icon: Cog, name: "Cutter Suction Dredgers", spec: "Precision dredging in compact soil — simultaneous cut and suction for efficiency and accuracy." },
+  { icon: Wrench, name: "Excavator-Mounted Dredgers", spec: "Ideal for shallow water and near-shore operations — flexible control in confined or sensitive environments." },
+  { icon: Droplet, name: "Hydraulic Pumps", spec: "High-capacity pumps engineered for sustained dredging output." },
+  { icon: GitBranch, name: "Floating Pipelines", spec: "Modular floating discharge lines for long-haul material transport." },
+  { icon: Ship, name: "Barges", spec: "Cargo and material barges for marine logistics and dredged-material handling." },
+  { icon: Anchor, name: "Tugboats", spec: "Tow and assist craft for swamp and coastal operations." },
 ];
 
 function FleetPage() {
   return (
     <SiteLayout>
       <PageHero
-        title="Our Fleet"
-        subtitle="Modern, well-maintained vessels built to handle every offshore and coastal challenge."
+        title="Equipment & Fleet"
+        subtitle="Modern, well-maintained dredging equipment and marine craft — continuously upgraded for efficiency, safety and environmental compliance."
       />
       <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-3 gap-8">
-          {fleet.map((f) => (
-            <article key={f.name} className="group rounded-lg overflow-hidden bg-card border border-border">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src={f.img} alt={f.name} loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {equipment.map((f) => (
+            <article key={f.name} className="group rounded-lg bg-card border border-border p-7 hover:border-accent transition-colors">
+              <div className="h-12 w-12 rounded-md bg-primary text-white group-hover:bg-accent group-hover:text-deep-ocean flex items-center justify-center transition-colors">
+                <f.icon className="h-6 w-6" />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-display font-semibold text-primary">{f.name}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{f.spec}</p>
-              </div>
+              <h3 className="mt-5 text-lg font-display font-semibold text-primary">{f.name}</h3>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{f.spec}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="py-20 bg-secondary">
+        <div className="mx-auto max-w-5xl px-6 lg:px-10 text-center">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold text-primary">
+            Skilled professionals behind every project.
+          </h2>
+          <p className="mt-5 text-muted-foreground leading-relaxed">
+            Our team includes marine engineers, dredging operators, technicians and
+            project managers — supported by continuous training in modern dredging
+            practices.
+          </p>
         </div>
       </section>
     </SiteLayout>
