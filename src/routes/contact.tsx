@@ -21,7 +21,7 @@ function ContactPage() {
           <div className="space-y-8">
             {[
               { icon: User, t: "Managing Director", d: "Mrs Doubra Tufa" },
-              { icon: MapPin, t: "Head Office", d: "Marine House, Victoria Island, Lagos, Nigeria" },
+              { icon: MapPin, t: "Head Office", d: "4, Magbaja Street, Off Aka Avenue, Effurun, Warri Central, Delta, Nigeria" },
               { icon: Phone, t: "Phone", d: "0803 283 3693 / 0810 754 3659" },
               { icon: Mail, t: "Email", d: "Dtmtufa@gmail.com / ebiladetufa1@gmail.com" },
             ].map((c) => (
