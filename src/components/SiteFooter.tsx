@@ -99,7 +99,7 @@ export function SiteFooter() {
             </li>
             <li className="flex gap-3">
               <MapPin className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
-              <span>Marine House, Victoria Island, Lagos, Nigeria</span>
+              <span>4, Magbaja Street, Off Aka Avenue, Effurun, Warri Central, Delta, Nigeria</span>
             </li>
             <li className="flex gap-3">
               <Phone className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
