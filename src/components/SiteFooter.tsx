@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Anchor, Mail, Phone, MapPin, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Anchor, Mail, Phone, MapPin, Facebook, Linkedin, Twitter, Instagram, User } from "lucide-react";
+import logo from "@/assets/fox-marine-logo.jpeg";
 
 export function SiteFooter() {
   return (
