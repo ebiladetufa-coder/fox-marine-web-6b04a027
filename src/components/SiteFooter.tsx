@@ -94,16 +94,26 @@ export function SiteFooter() {
           <h4 className="font-display text-base font-semibold mb-5 text-gold">Contact</h4>
           <ul className="space-y-4 text-sm text-white/70">
             <li className="flex gap-3">
+              <User className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
+              <span>Mrs Doubra Tufa <span className="block text-xs text-white/50">Managing Director</span></span>
+            </li>
+            <li className="flex gap-3">
               <MapPin className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
               <span>Marine House, Victoria Island, Lagos, Nigeria</span>
             </li>
             <li className="flex gap-3">
               <Phone className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
-              <a href="tel:+2340000000000" className="hover:text-gold">+234 (0) 000 000 0000</a>
+              <div className="flex flex-col">
+                <a href="tel:+2348032833693" className="hover:text-gold">0803 283 3693</a>
+                <a href="tel:+2348107543659" className="hover:text-gold">0810 754 3659</a>
+              </div>
             </li>
             <li className="flex gap-3">
               <Mail className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
-              <a href="mailto:info@foxmarine.ng" className="hover:text-gold">info@foxmarine.ng</a>
+              <div className="flex flex-col">
+                <a href="mailto:Dtmtufa@gmail.com" className="hover:text-gold">Dtmtufa@gmail.com</a>
+                <a href="mailto:ebiladetufa1@gmail.com" className="hover:text-gold">ebiladetufa1@gmail.com</a>
+              </div>
             </li>
           </ul>
         </div>
