@@ -33,9 +33,7 @@ export function SiteFooter() {
         {/* Brand */}
         <div className="space-y-5">
           <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-md border border-white/20 bg-white/5 flex items-center justify-center text-[10px] uppercase tracking-widest text-white/50">
-              Logo
-            </div>
+            <img src={logo} alt="Fox Marine Nigeria Limited logo" className="h-12 w-12 rounded-md object-cover bg-white" />
             <div>
               <div className="font-display text-lg font-semibold">Fox Marine</div>
               <div className="text-[10px] uppercase tracking-[0.25em] text-gold">Nigeria Limited</div>
