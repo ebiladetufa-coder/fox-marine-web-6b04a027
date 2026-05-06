@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { Anchor, Ship, Compass, ShieldCheck, ArrowRight } from "lucide-react";
+import { Anchor, Ship, Compass, ShieldCheck, ArrowRight, Waves, Truck } from "lucide-react";
 import heroImg from "@/assets/hero-vessel.jpg";
 import portImg from "@/assets/services-port.jpg";
 import offshoreImg from "@/assets/offshore.jpg";
@@ -8,11 +8,11 @@ import offshoreImg from "@/assets/offshore.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Fox Marine Nigeria Limited — Trusted Marine Services" },
+      { title: "Fox Marine Nigeria Limited — Dredging & Marine Services" },
       {
         name: "description",
         content:
-          "Fox Marine Nigeria Limited delivers offshore support, vessel chartering, and integrated marine logistics across the Gulf of Guinea.",
+          "Fox Marine Nigeria Limited is a Niger Delta–based dredging and marine services company delivering sand dredging, land reclamation, vessel hire, logistics, and wastewater treatment.",
       },
     ],
   }),
@@ -26,7 +26,7 @@ function HomePage() {
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
         <img
           src={heroImg}
-          alt="Marine supply vessel at sea"
+          alt="Dredging vessel at work"
           width={1920}
           height={1280}
           className="absolute inset-0 h-full w-full object-cover"
@@ -36,15 +36,16 @@ function HomePage() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 text-gold text-xs uppercase tracking-[0.25em] mb-8">
               <span className="h-1.5 w-1.5 rounded-full bg-gold" />
-              Marine Excellence Since Inception
+              Incorporated 2009 · RC 504645
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-semibold leading-[1.05]">
-              Navigating Nigeria's <span className="text-gold">Maritime</span> Future.
+              Dredging the Niger Delta's <span className="text-gold">future</span>.
             </h1>
             <p className="mt-6 text-lg text-white/75 max-w-xl leading-relaxed">
-              Fox Marine Nigeria Limited delivers world-class offshore support,
-              vessel chartering, and integrated marine logistics across the
-              Gulf of Guinea.
+              Fox Marine Nigeria Limited is a professionally structured dredging
+              and marine services company delivering sand dredging, land
+              reclamation, vessel hire, logistics, and wastewater treatment
+              across Nigeria and West Africa.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -68,13 +69,13 @@ function HomePage() {
       <section className="bg-primary text-white py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
           {[
-            { n: "15+", l: "Years of Excellence" },
-            { n: "50+", l: "Vessels Operated" },
-            { n: "200+", l: "Successful Missions" },
+            { n: "2009", l: "Year Established" },
+            { n: "8+", l: "Service Lines" },
+            { n: "Niger Delta", l: "Operational Base" },
             { n: "24/7", l: "Operational Support" },
           ].map((s) => (
             <div key={s.l}>
-              <div className="text-4xl md:text-5xl font-display font-semibold text-gold">{s.n}</div>
+              <div className="text-3xl md:text-4xl font-display font-semibold text-gold">{s.n}</div>
               <div className="mt-2 text-xs uppercase tracking-[0.2em] text-white/60">{s.l}</div>
             </div>
           ))}
@@ -87,17 +88,18 @@ function HomePage() {
           <div>
             <div className="text-[10px] uppercase tracking-[0.4em] text-accent mb-4">About Us</div>
             <h2 className="text-4xl md:text-5xl font-display font-semibold text-primary leading-tight">
-              A trusted partner in Nigerian maritime operations.
+              Reliable dredging. Responsible operations.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              From the bustling ports of Lagos to the depths of the Gulf of Guinea,
-              Fox Marine has built a reputation for safety, reliability, and operational
-              excellence. Our skilled crews and modern fleet are at the heart of every mission.
+              From our base in Warri, Delta State, Fox Marine has built a
+              reputation as a dependable, results-driven partner in dredging and
+              marine engineering — combining technical expertise, modern
+              equipment, and a highly skilled workforce.
             </p>
             <div className="mt-8 grid sm:grid-cols-2 gap-5">
               {[
-                { icon: ShieldCheck, t: "Safety First", d: "Industry-leading HSE standards." },
-                { icon: Compass, t: "Local Expertise", d: "Deep knowledge of regional waters." },
+                { icon: ShieldCheck, t: "Safety First", d: "Zero-accident policy and continuous HSE training." },
+                { icon: Compass, t: "Local Expertise", d: "Deep Niger Delta knowledge and presence." },
               ].map((f) => (
                 <div key={f.t} className="flex gap-3">
                   <f.icon className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
@@ -112,15 +114,15 @@ function HomePage() {
           <div className="relative">
             <img
               src={offshoreImg}
-              alt="Offshore platform with supply vessel"
+              alt="Dredging operations"
               width={1280}
               height={896}
               loading="lazy"
               className="rounded-lg shadow-[0_20px_60px_-20px_oklch(0.16_0.05_245/0.4)] aspect-[4/3] object-cover"
             />
             <div className="absolute -bottom-6 -left-6 bg-gold text-deep-ocean p-6 rounded-lg max-w-[200px] hidden md:block">
-              <div className="font-display text-3xl font-semibold">15+</div>
-              <div className="text-xs uppercase tracking-widest mt-1">Years building trust at sea</div>
+              <div className="font-display text-3xl font-semibold">Since 2009</div>
+              <div className="text-xs uppercase tracking-widest mt-1">Incorporated under CAMA</div>
             </div>
           </div>
         </div>
@@ -133,7 +135,7 @@ function HomePage() {
             <div>
               <div className="text-[10px] uppercase tracking-[0.4em] text-accent mb-4">What We Do</div>
               <h2 className="text-4xl md:text-5xl font-display font-semibold text-primary">
-                Comprehensive marine solutions.
+                Core dredging & marine services.
               </h2>
             </div>
             <Link to="/services" className="text-primary font-semibold inline-flex items-center gap-2 hover:text-accent">
@@ -142,9 +144,9 @@ function HomePage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: Ship, t: "Offshore Support", d: "Crew transfers, supply runs and platform support across regional waters." },
-              { icon: Anchor, t: "Vessel Chartering", d: "A modern fleet ready for short and long-term charter contracts." },
-              { icon: Compass, t: "Marine Logistics", d: "Integrated logistics solutions tailored to your operations." },
+              { icon: Waves, t: "Sand Dredging", d: "Sharp sand, filling sand and stockpiling for construction, industry and land filling." },
+              { icon: Anchor, t: "Land Reclamation", d: "Dredged-material supply for land development, urban expansion and shoreline protection." },
+              { icon: Ship, t: "Vessel Hire & Logistics", d: "Crew boats, cargo vessels and tankers — plus full marine logistics support." },
             ].map((s) => (
               <div key={s.t} className="group bg-card rounded-lg p-8 border border-border hover:border-accent transition-colors">
                 <div className="h-12 w-12 rounded-md bg-primary/5 group-hover:bg-accent/10 flex items-center justify-center transition-colors">
@@ -164,10 +166,10 @@ function HomePage() {
         <div className="absolute inset-0 bg-deep-ocean/80" />
         <div className="relative mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-display font-semibold">
-            Let's chart your next voyage together.
+            Plan your next dredging project with us.
           </h2>
           <p className="mt-5 text-white/70 text-lg">
-            Speak to our marine specialists for a tailored quote.
+            Speak to our team for site assessments, equipment mobilization and tailored quotes.
           </p>
           <Link to="/contact" className="inline-flex items-center gap-2 mt-10 px-8 py-4 rounded-md bg-gold text-deep-ocean font-semibold hover:bg-gold-glow transition-colors">
             Get in Touch <ArrowRight className="h-4 w-4" />
