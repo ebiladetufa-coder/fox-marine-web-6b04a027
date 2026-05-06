@@ -15,8 +15,8 @@ export function SiteFooter() {
             <h3 className="text-2xl md:text-3xl font-display font-semibold">
               Ready to set sail with us?
             </h3>
-            <p className="mt-2 text-white/70">
-              Reliable marine logistics across the Gulf of Guinea and beyond.
+          <p className="mt-2 text-white/70">
+              Dredging, marine support and integrated logistics across the Niger Delta.
             </p>
           </div>
           <Link
@@ -40,8 +40,7 @@ export function SiteFooter() {
             </div>
           </div>
           <p className="text-sm text-white/60 leading-relaxed">
-            A trusted Nigerian marine services company providing offshore support,
-            vessel chartering, and integrated logistics solutions.
+            A Niger Delta–based dredging and marine services company. Incorporated 2009 · RC 504645.
           </p>
           <div className="flex gap-3">
             {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
@@ -81,11 +80,11 @@ export function SiteFooter() {
         <div>
           <h4 className="font-display text-base font-semibold mb-5 text-gold">Services</h4>
           <ul className="space-y-3 text-sm text-white/70">
-            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Offshore Support</li>
-            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Vessel Chartering</li>
-            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Marine Logistics</li>
-            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Crew Services</li>
-            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Cargo Handling</li>
+            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Sand Dredging</li>
+            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Land Reclamation</li>
+            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Vessel Hire & Leasing</li>
+            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Logistics & Procurement</li>
+            <li className="flex gap-2"><Anchor className="h-4 w-4 mt-0.5 text-gold" /> Wastewater Treatment</li>
           </ul>
         </div>
 
@@ -95,25 +94,19 @@ export function SiteFooter() {
           <ul className="space-y-4 text-sm text-white/70">
             <li className="flex gap-3">
               <User className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
-              <span>Mrs Doubra Tufa <span className="block text-xs text-white/50">Managing Director</span></span>
+              <span>Doubra Tufa <span className="block text-xs text-white/50">Contact Person</span></span>
             </li>
             <li className="flex gap-3">
               <MapPin className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
-              <span>4, Magbaja Street, Off Aka Avenue, Effurun, Warri Central, Delta, Nigeria</span>
+              <span>No 4 Magbaja Street, Off Aka Avenue, Warri, Delta State, Nigeria</span>
             </li>
             <li className="flex gap-3">
               <Phone className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
-              <div className="flex flex-col">
-                <a href="tel:+2348032833693" className="hover:text-gold">0803 283 3693</a>
-                <a href="tel:+2348107543659" className="hover:text-gold">0810 754 3659</a>
-              </div>
+              <a href="tel:+2348032833693" className="hover:text-gold">0803 283 3693</a>
             </li>
             <li className="flex gap-3">
               <Mail className="h-4 w-4 mt-0.5 text-gold flex-shrink-0" />
-              <div className="flex flex-col">
-                <a href="mailto:Dtmtufa@gmail.com" className="hover:text-gold">Dtmtufa@gmail.com</a>
-                <a href="mailto:ebiladetufa1@gmail.com" className="hover:text-gold">ebiladetufa1@gmail.com</a>
-              </div>
+              <a href="mailto:pauldoubra@yahoo.com" className="hover:text-gold">pauldoubra@yahoo.com</a>
             </li>
           </ul>
         </div>
