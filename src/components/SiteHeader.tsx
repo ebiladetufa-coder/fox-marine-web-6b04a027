@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/fox-marine-logo.jpeg";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -17,10 +18,7 @@ export function SiteHeader() {
     <header className="absolute top-0 left-0 right-0 z-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-5 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          {/* Logo placeholder — replace with Fox Marine logo */}
-          <div className="h-12 w-12 rounded-md border border-white/30 bg-white/5 backdrop-blur-sm flex items-center justify-center text-[10px] uppercase tracking-widest text-white/60">
-            Logo
-          </div>
+          <img src={logo} alt="Fox Marine Nigeria Limited logo" className="h-12 w-12 rounded-md object-cover bg-white" />
           <div className="text-white">
             <div className="font-display text-lg leading-tight font-semibold">Fox Marine</div>
             <div className="text-[10px] uppercase tracking-[0.25em] text-gold">Nigeria Limited</div>
