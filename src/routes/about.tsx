@@ -6,8 +6,14 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — Fox Marine Nigeria Limited" },
-      { name: "description", content: "Fox Marine Nigeria Limited — a Niger Delta dredging and marine services company incorporated in 2009 (RC 504645)." },
+      { name: "description", content: "Niger Delta dredging and marine services company incorporated in 2009 (RC 504645)." },
+      { property: "og:title", content: "About — Fox Marine Nigeria Limited" },
+      { property: "og:description", content: "A professionally structured dredging and marine services company in the Niger Delta." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://fox-marine-web.lovable.app/about" },
+      { name: "twitter:card", content: "summary" },
     ],
+    links: [{ rel: "canonical", href: "https://fox-marine-web.lovable.app/about" }],
   }),
   component: AboutPage,
 });

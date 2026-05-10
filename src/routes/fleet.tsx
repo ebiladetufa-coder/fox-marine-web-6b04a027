@@ -6,8 +6,14 @@ export const Route = createFileRoute("/fleet")({
   head: () => ({
     meta: [
       { title: "Equipment & Fleet — Fox Marine Nigeria Limited" },
-      { name: "description", content: "Modern dredging equipment and a versatile marine fleet — cutter suction dredgers, excavator-mounted dredgers, barges, tugboats and more." },
+      { name: "description", content: "Cutter suction dredgers, excavator-mounted dredgers, barges, tugboats, hydraulic pumps and floating pipelines." },
+      { property: "og:title", content: "Equipment & Fleet — Fox Marine Nigeria Limited" },
+      { property: "og:description", content: "Modern, well-maintained dredging equipment and marine craft." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://fox-marine-web.lovable.app/fleet" },
+      { name: "twitter:card", content: "summary" },
     ],
+    links: [{ rel: "canonical", href: "https://fox-marine-web.lovable.app/fleet" }],
   }),
   component: FleetPage,
 });

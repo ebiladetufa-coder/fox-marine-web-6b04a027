@@ -12,9 +12,17 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Fox Marine Nigeria Limited is a Niger Delta–based dredging and marine services company delivering sand dredging, land reclamation, vessel hire, logistics, and wastewater treatment.",
+          "Niger Delta–based dredging and marine services: sand dredging, land reclamation, vessel hire, logistics, and wastewater treatment.",
       },
+      { property: "og:title", content: "Fox Marine Nigeria Limited — Dredging & Marine Services" },
+      { property: "og:description", content: "Niger Delta–based dredging and marine services company." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://fox-marine-web.lovable.app/" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Fox Marine Nigeria Limited" },
+      { name: "twitter:description", content: "Dredging & marine services in the Niger Delta." },
     ],
+    links: [{ rel: "canonical", href: "https://fox-marine-web.lovable.app/" }],
   }),
   component: HomePage,
 });

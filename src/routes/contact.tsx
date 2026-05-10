@@ -7,7 +7,13 @@ export const Route = createFileRoute("/contact")({
     meta: [
       { title: "Contact — Fox Marine Nigeria Limited" },
       { name: "description", content: "Get in touch with Fox Marine Nigeria Limited for marine services, quotes and partnerships." },
+      { property: "og:title", content: "Contact — Fox Marine Nigeria Limited" },
+      { property: "og:description", content: "Reach our team in Warri, Delta State for project enquiries." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://fox-marine-web.lovable.app/contact" },
+      { name: "twitter:card", content: "summary" },
     ],
+    links: [{ rel: "canonical", href: "https://fox-marine-web.lovable.app/contact" }],
   }),
   component: ContactPage,
 });
