@@ -6,8 +6,14 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Services — Fox Marine Nigeria Limited" },
-      { name: "description", content: "Sand dredging, river dredging, land reclamation, channel maintenance, logistics, vessel hire, leasing, chandeling, consultancy, warehousing, general contracts and wastewater treatment." },
+      { name: "description", content: "Sand & river dredging, land reclamation, logistics, vessel hire, leasing, chandeling, consultancy, warehousing and wastewater treatment." },
+      { property: "og:title", content: "Services — Fox Marine Nigeria Limited" },
+      { property: "og:description", content: "Full-service dredging and marine operations across the Niger Delta." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://fox-marine-web.lovable.app/services" },
+      { name: "twitter:card", content: "summary" },
     ],
+    links: [{ rel: "canonical", href: "https://fox-marine-web.lovable.app/services" }],
   }),
   component: ServicesPage,
 });
