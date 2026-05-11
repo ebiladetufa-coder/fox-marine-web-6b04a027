@@ -10,6 +10,13 @@ export default defineConfig({
   vite: {
     environments: {
       ssr: {
+        resolve: {
+          // Bundle ALL npm deps into the SSR output so Vercel's Edge runtime
+          // (which has no node_modules resolution) can execute it standalone.
+          noExternal: true,
+          external: [],
+besoin: undefined,
+        },
         build: {
           rollupOptions: {
             output: {
