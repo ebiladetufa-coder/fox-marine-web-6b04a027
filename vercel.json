@@ -1,6 +1,5 @@
 {
-  "outputDirectory": "dist/client",
-  "rewrites": [
-    { "source": "/((?!assets/).*)", "destination": "/index.html" }
-  ]
+  "buildCommand": "npm run build:vercel",
+  "installCommand": "npm install",
+  "framework": null
 }
